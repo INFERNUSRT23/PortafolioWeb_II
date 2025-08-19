@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #ffe8e8, #fff5e6, #003366, #e6f7ff);
+    background-size: 400% 400%;
+    animation: gradientBG 18s ease infinite;
+    color: #333;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #ff4d4d, #ff944d);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #000 !important;
+}
+
+/* Secciones */
+section {
+    padding: 60px 0;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #ff4d4d;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h3, h4 {
+    color: #ff944d;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Imágenes */
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+/* Carruseles */
+.carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 77, 77, 0.7);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-item p {
+    background-color: rgba(12, 12, 12, 0.85);
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ff944d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff4d4d;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    section {
+        padding: 40px 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+}
